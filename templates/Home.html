@@ -1,0 +1,255 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Premium form</title>
+  
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    
+
+
+    <style>
+ 
+ body{
+    background-image: url("https://images.moneycontrol.com/static-mcnews/2021/07/shutterstock_236845816.jpg?impolicy=website&width=770&height=431");
+ background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  min-height: 150vh;
+}
+div{
+  margin: 2em 5em 3em 5em;
+
+  padding: 2em 6em 2em 6em;
+  background: rgb(2,0,36);
+background: linear-gradient(117deg, rgb(23, 116, 150) 0%, rgba(189, 196, 230, 0.976) 96%);
+  color: #ffff;
+  font-family: cursive;
+  border-radius: 1.25rem;
+  opacity:0.9;
+}
+
+.form{
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+#submit{
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background: rgb(2,0,36);
+  color: inherit;
+  border-radius: 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#dropdown{
+  width: 100%;
+}
+
+    </style>
+</head>
+<body>
+      <div>
+        <h1 style="text-align:center">Insurance Premium form</h1>
+
+        <h4>Fill the form. All fields are mandatory</h4><br>
+        
+        <form method="POST", action="/result">
+          <label id="number-label">Insurance with us</label>
+            <input type="number" id="number" name="yoi" class="form" placeholder="How manys years" min=0 max=1000 required><br>
+			<!---Insurance with us-->
+          
+          <label id="number-label">Number of regular checkup last year</label>
+            <input type="number" id="number" name="rc" class="form" placeholder="how many times last year" min=1 max=1000 required><br>
+			<!---Number of regular checkup last year-->
+          
+          <label id="carrer">Adventure sports</label>
+          <select id="dropdown" name="as" required>
+		  <option disabled selected value> 
+            </option>
+            </option>
+            <option value="0">
+              Yes
+            </option>
+            <option value="1">
+              No
+            </option>
+          </select><!--Adventure sports--->
+          
+          
+          <label id="number-label">Visited doctor last year</label>
+            <input type="number" id="number" name="vd" class="form" placeholder="how many times visited last year" min=1 max=1000 required><br>
+			<!---Visited doctor last year-->
+          
+          <label id="number-label">Daily average steps</label>
+            <input type="number" id="number" name="das" class="form" placeholder="Enter daily average steps" min=1 max=10000 required><br>
+			<!---Daily average steps-->
+          
+          <label id="number-label">Age</label>
+            <input type="number" id="number" name="age" class="form" placeholder="" min=1 max=1000 required><br>
+			<!---Age-->
+          
+          
+          <label id="carrer">Do you have heart disease history</label>
+          <select id="dropdown" name="hdh">
+            <option disabled selected value> 
+            </option>
+            <option value="0">
+              Yes
+            </option>
+            <option value="1">
+              No
+            </option>
+          </select>
+		  <!--Do you have heart disease history--->
+          
+          
+          <label id="carrer">Do you have other major disease history</label>
+          <select id="dropdown" name="mdh" required>
+            <option disabled selected value>  
+            </option>
+            <option value="0">
+              Yes
+            </option>
+            <option value="1">
+              No
+            </option>
+          </select>
+		  <!--Do you have other major disease history--->
+          
+          
+          <label id="number-label">Average glucose level</label>
+            <input type="number" id="number" name="gl" class="form" placeholder="" min=1 max=1000 required><br>
+			<!---Average glucose level-->
+          
+          
+          <label id="number-label">BMI</label>
+            <input type="number" id="number" name="bmi" class="form" placeholder="" min=1 max=1000 required><br>
+			<!---BMI-->
+          
+          
+          <label id="number-label">Weight</label>
+            <input type="number" id="number" name="weight" class="form" placeholder="Enter your weight in integer" min=1 max=1000 required><br>
+			<!---Weight-->
+          
+          
+          <label id="number-label">Change in weight in last one year</label>
+            <input type="number" id="number" name="wc" class="form" placeholder="" min=1 max=1000 required><br>
+			<!---Change in weight in last one year-->
+          
+          
+          <label id="number-label">Fat percentage</label>
+            <input type="number" id="number" name="fp" class="form" placeholder="" min=1 max=1000 required><br>
+			<!---Fat percentage-->
+          
+          
+          <label id="carrer">Occupation</label>
+          <select id="dropdown" name="occp" required>
+            <option disabled selected value>  
+            </option>
+            <option value="0">
+              Business
+            </option>
+            <option value="1">
+              Salried
+            </option>
+             <option value="2">
+              Student
+            </option>
+          </select>
+		  <!--Occupation--->
+          
+          <label id="carrer">Gender</label>
+          <select id="dropdown" name="sex" required>
+            <option disabled selected value> 
+            </option>
+            <option value="0">
+              Male
+            </option>
+            <option value="1">
+              Female
+            </option>
+          </select>
+		  <!--Gender--->
+          
+          
+          <label id="carrer">Smoking Habits</label>
+          <select id="dropdown" name="smoke" required>
+            <option disabled selected value>  
+            </option>
+            <option value="0">
+              formerly smoked
+            </option>
+            <option value="1">
+              never smoked
+            </option>
+             <option value="2">
+              smokes
+            </option>
+          </select>
+		  <!--Smoking status--->
+          
+          
+          <label id="carrer">insurance coverd from other company</label>
+          <select id="dropdown" name="oc" required>
+            <option disabled selected value>  
+            </option>
+            <option value="0">
+              Yes
+            </option>
+            <option value="1">
+              No
+            </option>
+          </select>
+		  <!--insurance coverd from other company--->
+          
+          
+          <label id="carrer">Alcohol Habits</label>
+          <select id="dropdown" name="alcohol" required>
+            <option disabled selected value> 
+            </option>
+            <option value="0">
+              No
+            </option>
+            <option value="1">
+              Rare
+            </option>
+            <option value="2">
+              Daily
+            </option>
+          </select>
+		  <!--Alcohol Habits--->
+          
+          
+          <label id="carrer">Exercise</label>
+          <select id="dropdown" name="exc" required>
+            <option disabled selected value>   
+            </option>
+            <option value="0">
+              No
+            </option>
+            <option value="1">
+              Moderate
+            </option>
+            <option value="2">
+              Extreme
+            </option>
+          </select>
+		  <!--Exercise--->
+          
+             <label id="number-label">Cholesterol</label>
+            <input type="number" id="number" name="cholestrol" class="form" placeholder="" min=1 max=1000 required><br>
+			<!---cholestrol-->
+          
+          <input type="submit" id="submit" value="Submit">
+        </form>
+      </div>
+      
+      
+  
+</body>
+</html>
